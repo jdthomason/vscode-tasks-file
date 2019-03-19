@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {   
+            // What the task is called in the menu
+            "label": "Knit Rmarkdown",
+            // This indicates that it's a shell command
+            "type": "shell",
+            // Command(s) to run
+            "command": "cd ${fileDirname} && Rscript -e \"rmarkdown::render('${fileBasename}')\"",
+            // Ignore the problem matcher stuff
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": false,
+                "clear": true
+            }
+
+        }
+    ]
+}
