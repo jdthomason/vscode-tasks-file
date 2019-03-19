@@ -16,7 +16,20 @@
                 "showReuseMessage": false,
                 "clear": true
             }
-
+        },
+        {   
+            // What the task is called in the menu
+            "label": "PDFLaTeX One Pass",
+            // This indicates that it's a shell command
+            "type": "shell",
+            // Command(s) to run
+            "command": "cd ${fileDirname} && pdflatex {fileBasename}",
+            // Ignore the problem matcher stuff
+            "problemMatcher": [],
+            "presentation": {
+                "showReuseMessage": false,
+                "clear": true
+            }
         }
     ]
 }
